@@ -11,25 +11,25 @@
   <!-- Header -->
   <header class="bg-gray-800 shadow">
     <div class="container mx-auto flex justify-between items-center p-4">
-      <a href="#home" class="text-2xl font-bold text-emerald-400" aria-label="learn2hack Home">learn2hack</a>
-      <nav aria-label="Primary navigation" class="space-x-6">
-        <a href="#home" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded">Home</a>
-        <a href="#course" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded">Course</a>
-        <a href="#about" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded">About</a>
-        <a href="#contact" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded">Contact</a>
+      <a href="#home" class="text-2xl font-bold text-emerald-400" aria-label="learn2hack homepage">learn2hack</a>
+      <nav class="space-x-6" aria-label="Primary navigation">
+        <a href="#home" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400">Home</a>
+        <a href="#course" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400">Course</a>
+        <a href="#about" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400">About</a>
+        <a href="#contact" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400">Contact</a>
       </nav>
     </div>
   </header>
 
+  <!-- Main content -->
   <main class="flex-grow">
 
     <!-- Home Section -->
     <section id="home" class="container mx-auto px-6 py-20 text-center">
       <h1 class="text-5xl font-extrabold mb-6 text-emerald-400">Welcome to learn2hack</h1>
-      <p class="text-xl mb-10 max-w-3xl mx-auto">
-        Your one-stop platform to kickstart your journey in ethical hacking, bug bounty, and cybersecurity.
-      </p>
-      <a href="#course" class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md transition focus:outline-none focus:ring-2 focus:ring-emerald-400">
+      <p class="text-xl mb-10">Your one-stop platform to kickstart your journey in ethical hacking, bug bounty, and cybersecurity.</p>
+      <a href="#course" 
+         class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md transition focus:outline-none focus:ring-4 focus:ring-emerald-400">
         Explore Course
       </a>
     </section>
@@ -37,10 +37,8 @@
     <!-- Course Title -->
     <section id="course" class="container mx-auto px-6">
       <h2 class="text-5xl font-extrabold mb-6 text-emerald-400 text-center">BUG BOUNTY BUNDLE</h2>
-      <p class="text-xl text-center mb-10">
-        ❤️‍🔥 Your Future Self Will Thank You — Start Hacking, Start Earning, Start Winning ❤️‍🔥
-      </p>
-
+      <p class="text-xl text-center mb-10">❤️‍🔥 Your Future Self Will Thank You — Start Hacking, Start Earning, Start Winning ❤️‍🔥</p>
+      
       <!-- Course Preview Image -->
       <div class="flex justify-center mb-10">
         <img 
@@ -48,75 +46,62 @@
           alt="Course Preview" 
           class="rounded-lg shadow-lg w-80 h-80 object-cover"
           loading="lazy"
-          width="320"
-          height="320"
-        />
+        >
       </div>
 
       <!-- Accordion-style Course Index -->
-      <section class="mt-12 max-w-4xl mx-auto" aria-label="Course Index">
+      <section class="mt-12 max-w-3xl mx-auto">
         <h3 class="text-3xl font-semibold mb-6">Course Index 🗂️</h3>
-        <div class="space-y-4">
-          <!-- Accordion Item -->
-          <article class="border border-gray-700 rounded-lg">
+        <div class="space-y-4" role="list">
+
+          <div class="border border-gray-700 rounded-lg">
             <button 
-              type="button" 
-              class="w-full flex justify-between items-center px-4 py-3 text-lg font-medium hover:bg-gray-800 transition focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded-t-lg" 
+              class="w-full flex justify-between items-center px-4 py-3 text-lg font-medium hover:bg-gray-800 transition focus:outline-none focus:ring-2 focus:ring-emerald-400" 
               aria-expanded="false"
-              aria-controls="android-app-hacking"
+              aria-controls="android-app-content"
               onclick="toggleAccordion(this)"
             >
               <span>📁 Android App HACKING</span>
-              <svg 
-                class="w-5 h-5 transform transition-transform duration-300" 
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" viewBox="0 0 24 24" stroke="currentColor" 
-                aria-hidden="true"
-              >
+              <svg class="w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div id="android-app-hacking" class="px-4 py-2 hidden" role="region" aria-labelledby="android-app-hacking">
+            <div id="android-app-content" class="px-4 py-2 hidden" role="region" aria-labelledby="android-app-header">
               <ul class="list-disc list-inside text-gray-300">
                 <li>Reverse engineering basics</li>
                 <li>APKTool and Frida walkthroughs</li>
                 <li>Bypassing root detection</li>
               </ul>
             </div>
-          </article>
+          </div>
 
-          <article class="border border-gray-700 rounded-lg">
+          <div class="border border-gray-700 rounded-lg">
             <button 
-              type="button" 
-              class="w-full flex justify-between items-center px-4 py-3 text-lg font-medium hover:bg-gray-800 transition focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded-t-lg" 
+              class="w-full flex justify-between items-center px-4 py-3 text-lg font-medium hover:bg-gray-800 transition focus:outline-none focus:ring-2 focus:ring-emerald-400" 
               aria-expanded="false"
-              aria-controls="web-exploitation"
+              aria-controls="web-exploitation-content"
               onclick="toggleAccordion(this)"
             >
               <span>📁 WEB EXPLOITATION</span>
-              <svg 
-                class="w-5 h-5 transform transition-transform duration-300" 
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" viewBox="0 0 24 24" stroke="currentColor" 
-                aria-hidden="true"
-              >
+              <svg class="w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div id="web-exploitation" class="px-4 py-2 hidden" role="region" aria-labelledby="web-exploitation">
+            <div id="web-exploitation-content" class="px-4 py-2 hidden" role="region" aria-labelledby="web-exploitation-header">
               <ul class="list-disc list-inside text-gray-300">
                 <li>XSS, SQLi, CSRF basics</li>
                 <li>Labs and real-world writeups</li>
                 <li>Bypassing WAFs</li>
               </ul>
             </div>
-          </article>
-          <!-- Additional accordion items can be added here -->
+          </div>
+
+          <!-- Add more accordion sections as needed -->
         </div>
       </section>
 
       <!-- Benefits -->
-      <section class="mb-16 mt-12 max-w-4xl mx-auto">
+      <section class="mb-16 mt-12 max-w-3xl mx-auto">
         <h3 class="text-3xl font-semibold mb-4">What You’ll Learn 🚀</h3>
         <ul class="list-disc list-inside space-y-2 text-lg">
           <li>💻 Real-World Bug Bounty Tactics and Tools</li>
@@ -127,12 +112,15 @@
       </section>
 
       <!-- Pricing -->
-      <section class="text-center bg-gray-800 p-8 rounded-lg shadow-md max-w-md mx-auto">
-        <h4 class="text-2xl font-bold text-emerald-400 mb-4">Only ₹239</h4>
-        <p class="mb-6 text-lg">One-time payment for lifetime access. Instant enrollment.</p>
-        <a href="payment.html" class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md transition focus:outline-none focus:ring-2 focus:ring-emerald-400">
-          Enroll Now
-        </a>
+      <section class="bg-gray-800 py-16 flex justify-center items-center rounded-lg shadow-md">
+        <div class="bg-gray-900 p-10 rounded-lg shadow-lg text-center w-full max-w-md">
+          <h4 class="text-3xl font-bold text-emerald-400 mb-4">Only ₹239</h4>
+          <p class="text-lg mb-6">One-time payment for lifetime access. Instant enrollment.</p>
+          <a href="https://cyber-watch-dog.github.io/learn2hack.shop/payment.html" 
+             class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md transition focus:outline-none focus:ring-4 focus:ring-emerald-400">
+            Enroll Now
+          </a>
+        </div>
       </section>
     </section>
 
@@ -147,13 +135,12 @@
     function toggleAccordion(button) {
       const content = button.nextElementSibling;
       const icon = button.querySelector('svg');
-      const isExpanded = button.getAttribute('aria-expanded') === 'true';
-
-      button.setAttribute('aria-expanded', String(!isExpanded));
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      
+      button.setAttribute('aria-expanded', !expanded);
       content.classList.toggle('hidden');
       icon.classList.toggle('rotate-180');
     }
   </script>
-
 </body>
 </html>
