@@ -11,107 +11,83 @@
   <!-- Header -->
   <header class="bg-gray-800 shadow">
     <div class="container mx-auto flex justify-between items-center p-4">
-      <a href="#home" class="text-2xl font-bold text-emerald-400" aria-label="learn2hack homepage">learn2hack</a>
-      <nav class="space-x-6" aria-label="Primary navigation">
-        <a href="#home" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400">Home</a>
-        <a href="#course" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400">Course</a>
-        <a href="#about" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400">About</a>
-        <a href="#contact" class="hover:text-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400">Contact</a>
+      <a href="#home" class="text-2xl font-bold text-emerald-400">learn2hack</a>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-emerald-400">Home</a>
+        <a href="#course" class="hover:text-emerald-400">Course</a>
+        <a href="#about" class="hover:text-emerald-400">About</a>
+        <a href="#contact" class="hover:text-emerald-400">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Main content -->
-  <main class="flex-grow">
+  <!-- Home Section -->
+  <section id="home" class="container mx-auto px-6 py-20 text-center">
+    <h1 class="text-5xl font-extrabold mb-6 text-emerald-400">Welcome to learn2hack</h1>
+    <p class="text-xl mb-10">Your one-stop platform to kickstart your journey in ethical hacking, bug bounty, and cybersecurity.</p>
+    <a href="#course" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md transition">Explore Course</a>
+  </section>
 
-    <!-- Home Section -->
-    <section id="home" class="container mx-auto px-6 py-20 text-center">
-      <h1 class="text-5xl font-extrabold mb-6 text-emerald-400">Welcome to learn2hack</h1>
-      <p class="text-xl mb-10">Your one-stop platform to kickstart your journey in ethical hacking, bug bounty, and cybersecurity.</p>
-      <a href="#course" 
-         class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md transition focus:outline-none focus:ring-4 focus:ring-emerald-400">
-        Explore Course
-      </a>
+  <!-- Course Section -->
+  <main id="course" class="flex-grow container mx-auto px-6 py-20 max-w-4xl">
+    <h2 class="text-4xl font-extrabold mb-6 text-emerald-400 text-center">BUG BOUNTY BUNDLE</h2>
+    <p class="text-xl text-center mb-10">❤️‍🔥 Your Future Self Will Thank You — Start Hacking, Start Earning, Start Winning ❤️‍🔥</p>
+
+    <!-- Image -->
+    <div class="flex justify-center mb-10">
+      <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-636c-61f7-ab69-b874b51656fb/raw?se=2025-05-29T16%3A54%3A48Z&sp=r&sv=2024-08-04&sr=b&scid=4f610745-c50a-5517-bd5c-ce1c56c4281b&skoid=864daabb-d06a-46b3-a747-d35075313a83&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-29T06%3A24%3A15Z&ske=2025-05-30T06%3A24%3A15Z&sks=b&skv=2024-08-04&sig=bOLow9ugn8q4UNRAU2OzF%2Bb79D9xuZb9CfgiNISWIhc%3D" alt="Course Preview" class="rounded-lg shadow-lg w-80 h-80 object-cover">
+    </div>
+
+    <!-- Accordion-style Course Index -->
+    <section class="mt-12">
+      <h3 class="text-3xl font-semibold mb-6">Course Index 🗂️</h3>
+      <div class="space-y-4">
+        <div class="border border-gray-700 rounded-lg">
+          <button class="w-full flex justify-between items-center px-4 py-3 text-lg font-medium hover:bg-gray-800 transition" onclick="toggleAccordion(this)">
+            <span>📁 Android App HACKING</span>
+            <svg class="w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="px-4 py-2 hidden">
+            <ul class="list-disc list-inside text-gray-300">
+              <li>Reverse engineering basics</li>
+              <li>APKTool and Frida walkthroughs</li>
+              <li>Bypassing root detection</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border border-gray-700 rounded-lg">
+          <button class="w-full flex justify-between items-center px-4 py-3 text-lg font-medium hover:bg-gray-800 transition" onclick="toggleAccordion(this)">
+            <span>📁 WEB EXPLOITATION</span>
+            <svg class="w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="px-4 py-2 hidden">
+            <ul class="list-disc list-inside text-gray-300">
+              <li>XSS, SQLi, CSRF basics</li>
+              <li>Labs and real-world writeups</li>
+              <li>Bypassing WAFs</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Add more accordion sections as needed -->
+      </div>
     </section>
 
-    <!-- Course Title -->
-    <section id="course" class="container mx-auto px-6">
-      <h2 class="text-5xl font-extrabold mb-6 text-emerald-400 text-center">BUG BOUNTY BUNDLE</h2>
-      <p class="text-xl text-center mb-10">❤️‍🔥 Your Future Self Will Thank You — Start Hacking, Start Earning, Start Winning ❤️‍🔥</p>
-      
-      <!-- Course Preview Image -->
-      <div class="flex justify-center mb-10">
-        <img 
-          src="assets/images/df443e3b-703d-408f-acb4-ac416a8c0d05.png" 
-          alt="Course Preview" 
-          class="rounded-lg shadow-lg w-80 h-80 object-cover"
-          loading="lazy"
-        >
-      </div>
+    <!-- Benefits -->
+    <section class="mb-16 mt-12">
+      <h3 class="text-3xl font-semibold mb-4">What You’ll Learn 🚀</h3>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li>💻 Real-World Bug Bounty Tactics and Tools</li>
+        <li>🔄 Weekly Updates with Fresh Content</li>
+        <li>🧠 Bonus Resources — POCs, Articles & Templates</li>
+        <li>📬 Access to Private Events & Webinars</li>
+      </ul>
+    </section>
 
-      <!-- Accordion-style Course Index -->
-      <section class="mt-12 max-w-3xl mx-auto">
-        <h3 class="text-3xl font-semibold mb-6">Course Index 🗂️</h3>
-        <div class="space-y-4" role="list">
-
-          <div class="border border-gray-700 rounded-lg">
-            <button 
-              class="w-full flex justify-between items-center px-4 py-3 text-lg font-medium hover:bg-gray-800 transition focus:outline-none focus:ring-2 focus:ring-emerald-400" 
-              aria-expanded="false"
-              aria-controls="android-app-content"
-              onclick="toggleAccordion(this)"
-            >
-              <span>📁 Android App HACKING</span>
-              <svg class="w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div id="android-app-content" class="px-4 py-2 hidden" role="region" aria-labelledby="android-app-header">
-              <ul class="list-disc list-inside text-gray-300">
-                <li>Reverse engineering basics</li>
-                <li>APKTool and Frida walkthroughs</li>
-                <li>Bypassing root detection</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="border border-gray-700 rounded-lg">
-            <button 
-              class="w-full flex justify-between items-center px-4 py-3 text-lg font-medium hover:bg-gray-800 transition focus:outline-none focus:ring-2 focus:ring-emerald-400" 
-              aria-expanded="false"
-              aria-controls="web-exploitation-content"
-              onclick="toggleAccordion(this)"
-            >
-              <span>📁 WEB EXPLOITATION</span>
-              <svg class="w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <div id="web-exploitation-content" class="px-4 py-2 hidden" role="region" aria-labelledby="web-exploitation-header">
-              <ul class="list-disc list-inside text-gray-300">
-                <li>XSS, SQLi, CSRF basics</li>
-                <li>Labs and real-world writeups</li>
-                <li>Bypassing WAFs</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Add more accordion sections as needed -->
-        </div>
-      </section>
-
-      <!-- Benefits -->
-      <section class="mb-16 mt-12 max-w-3xl mx-auto">
-        <h3 class="text-3xl font-semibold mb-4">What You’ll Learn 🚀</h3>
-        <ul class="list-disc list-inside space-y-2 text-lg">
-          <li>💻 Real-World Bug Bounty Tactics and Tools</li>
-          <li>🔄 Weekly Updates with Fresh Content</li>
-          <li>🧠 Bonus Resources — POCs, Articles & Templates</li>
-          <li>📬 Access to Private Events & Webinars</li>
-        </ul>
-      </section>
-
-       <!-- Pricing -->
+    <!-- Pricing -->
     <section class="text-center bg-gray-800 p-8 rounded-lg shadow-md">
       <h4 class="text-2xl font-bold text-emerald-400 mb-4">Only ₹239</h4>
       <p class="mb-6 text-lg">One-time payment for lifetime access. Instant enrollment.</p>
