@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>learn2hack - Bug Bounty Bundle</title>
+  <title>learn2hack - Home & Bug Bounty Bundle</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen flex flex-col">
@@ -11,43 +11,89 @@
   <!-- Header -->
   <header class="bg-gray-800 shadow">
     <div class="container mx-auto flex justify-between items-center p-4">
-      <a href="index.html" class="text-2xl font-bold text-emerald-400">learn2hack</a>
+      <a href="#home" class="text-2xl font-bold text-emerald-400">learn2hack</a>
       <nav class="space-x-6">
-        <a href="index.html" class="hover:text-emerald-400">Home</a>
-        <a href="course-detail.html" class="hover:text-emerald-400">Course</a>
-        <a href="about.html" class="hover:text-emerald-400">About</a>
-        <a href="contact.html" class="hover:text-emerald-400">Contact</a>
+        <a href="#home" class="hover:text-emerald-400">Home</a>
+        <a href="#course" class="hover:text-emerald-400">Course</a>
+        <a href="#about" class="hover:text-emerald-400">About</a>
+        <a href="#contact" class="hover:text-emerald-400">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <main class="flex-grow container mx-auto px-6 py-20 text-center max-w-4xl">
-    <h1 class="text-5xl font-extrabold mb-6 text-emerald-400">BUG BOUNTY BUNDLE</h1>
-    
-    <div class="flex justify-center mb-8">
-      <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-636c-61f7-ab69-b874b51656fb/raw?se=2025-05-29T16%3A54%3A48Z&sp=r&sv=2024-08-04&sr=b&scid=4f610745-c50a-5517-bd5c-ce1c56c4281b&skoid=864daabb-d06a-46b3-a747-d35075313a83&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-29T06%3A24%3A15Z&ske=2025-05-30T06%3A24%3A15Z&sks=b&skv=2024-08-04&sig=bOLow9ugn8q4UNRAU2OzF%2Bb79D9xuZb9CfgiNISWIhc%3D" 
-        alt="Course Thumbnail" 
-        class="w-80 h-80 object-cover rounded-lg shadow-lg">
+  <!-- Home Section -->
+  <section id="home" class="container mx-auto px-6 py-20 text-center">
+    <h1 class="text-5xl font-extrabold mb-6 text-emerald-400">Welcome to learn2hack</h1>
+    <p class="text-xl mb-10">Your one-stop platform to kickstart your journey in ethical hacking, bug bounty, and cybersecurity.</p>
+    <a href="#course" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md transition">Explore Course</a>
+  </section>
+
+  <!-- Course Section -->
+  <main id="course" class="flex-grow container mx-auto px-6 py-20 max-w-4xl">
+    <h2 class="text-4xl font-extrabold mb-6 text-emerald-400 text-center">BUG BOUNTY BUNDLE</h2>
+    <p class="text-xl text-center mb-10">❤️‍🔥 Your Future Self Will Thank You — Start Hacking, Start Earning, Start Winning ❤️‍🔥</p>
+
+    <!-- Image -->
+    <div class="flex justify-center mb-10">
+      <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-636c-61f7-ab69-b874b51656fb/raw?se=2025-05-29T16%3A54%3A48Z&sp=r&sv=2024-08-04&sr=b&scid=4f610745-c50a-5517-bd5c-ce1c56c4281b&skoid=864daabb-d06a-46b3-a747-d35075313a83&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-29T06%3A24%3A15Z&ske=2025-05-30T06%3A24%3A15Z&sks=b&skv=2024-08-04&sig=bOLow9ugn8q4UNRAU2OzF%2Bb79D9xuZb9CfgiNISWIhc%3D" alt="Course Preview" class="rounded-lg shadow-lg w-80 h-80 object-cover">
     </div>
 
-    <p class="text-xl mb-8">
-      ❤️‍🔥Your Future Self Will Thank You — Start Hacking, Start Earning, Start Winning❤️‍🔥
-    </p>
-    
-    <a href="course-detail.html" class="inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md transition">
-      Enroll Now
-    </a>
+    <!-- Accordion-style Course Index -->
+    <section class="mt-12">
+      <h3 class="text-3xl font-semibold mb-6">Course Index 🗂️</h3>
+      <div class="space-y-4">
+        <div class="border border-gray-700 rounded-lg">
+          <button class="w-full flex justify-between items-center px-4 py-3 text-lg font-medium hover:bg-gray-800 transition" onclick="toggleAccordion(this)">
+            <span>📁 Android App HACKING</span>
+            <svg class="w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="px-4 py-2 hidden">
+            <ul class="list-disc list-inside text-gray-300">
+              <li>Reverse engineering basics</li>
+              <li>APKTool and Frida walkthroughs</li>
+              <li>Bypassing root detection</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border border-gray-700 rounded-lg">
+          <button class="w-full flex justify-between items-center px-4 py-3 text-lg font-medium hover:bg-gray-800 transition" onclick="toggleAccordion(this)">
+            <span>📁 WEB EXPLOITATION</span>
+            <svg class="w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="px-4 py-2 hidden">
+            <ul class="list-disc list-inside text-gray-300">
+              <li>XSS, SQLi, CSRF basics</li>
+              <li>Labs and real-world writeups</li>
+              <li>Bypassing WAFs</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Add more accordion sections as needed -->
+      </div>
+    </section>
 
-    <!-- Course Benefits -->
-    <section class="mt-16 text-left">
-      <h2 class="text-3xl font-semibold mb-4">What You Get With the Bundle? 🔥</h2>
+    <!-- Benefits -->
+    <section class="mb-16 mt-12">
+      <h3 class="text-3xl font-semibold mb-4">What You’ll Learn 🚀</h3>
       <ul class="list-disc list-inside space-y-2 text-lg">
-        <li>💻 Explore Real-World Bug Bounty Tactics with Our Expert-Curated Bundle</li>
-        <li>🔄 Weekly Updates — Fresh Drops, Always</li>
-        <li>🧠 Upcoming Additions — POCs, Articles & More</li>
-        <li>📬 Stay in the Loop — Live Events & Meetups</li>
+        <li>💻 Real-World Bug Bounty Tactics and Tools</li>
+        <li>🔄 Weekly Updates with Fresh Content</li>
+        <li>🧠 Bonus Resources — POCs, Articles & Templates</li>
+        <li>📬 Access to Private Events & Webinars</li>
       </ul>
+    </section>
+
+    <!-- Pricing -->
+    <section class="text-center bg-gray-800 p-8 rounded-lg shadow-md">
+      <h4 class="text-2xl font-bold text-emerald-400 mb-4">Only ₹239</h4>
+      <p class="mb-6 text-lg">One-time payment for lifetime access. Instant enrollment.</p>
+      <a href="payment.html" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md transition">
+        Enroll Now
+      </a>
     </section>
   </main>
 
@@ -56,5 +102,13 @@
     &copy; 2025 learn2hack. All rights reserved.
   </footer>
 
+  <script>
+    function toggleAccordion(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('svg');
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
 </body>
 </html>
