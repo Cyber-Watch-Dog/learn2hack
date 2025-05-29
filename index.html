@@ -111,18 +111,31 @@
         </ul>
       </section>
 
-      <!-- Pricing -->
-      <section class="bg-gray-800 py-16 flex justify-center items-center rounded-lg shadow-md">
-        <div class="bg-gray-900 p-10 rounded-lg shadow-lg text-center w-full max-w-md">
-          <h4 class="text-3xl font-bold text-emerald-400 mb-4">Only ₹239</h4>
-          <p class="text-lg mb-6">One-time payment for lifetime access. Instant enrollment.</p>
-          <a href="https://cyber-watch-dog.github.io/learn2hack.shop/payment.html" 
-             class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md transition focus:outline-none focus:ring-4 focus:ring-emerald-400">
-            Enroll Now
-          </a>
-        </div>
-      </section>
+       <!-- Pricing -->
+    <section class="text-center bg-gray-800 p-8 rounded-lg shadow-md">
+      <h4 class="text-2xl font-bold text-emerald-400 mb-4">Only ₹239</h4>
+      <p class="mb-6 text-lg">One-time payment for lifetime access. Instant enrollment.</p>
+      <a href="payment.html" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-md transition">
+        Enroll Now
+      </a>
     </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-6 text-center">
+    &copy; 2025 learn2hack. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleAccordion(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('svg');
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
+</body>
+</html>
 
   </main>
 
